@@ -1,0 +1,26 @@
+:root {
+  --vp-c-brand: #ffcf00;          /* 罗德岛警告黄 */
+  --vp-c-brand-next: #ffe05a;
+  --vp-c-bg: #111111;             /* 工业黑 */
+  --vp-c-bg-soft: #1a1a1a;
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #aaaaaa;
+  --vp-font-family-base: 'JetBrains Mono', 'Consolas', monospace;
+}
+
+/* 模拟终端扫描线 */
+.VPApp {
+  background: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02)),
+    #111111;
+  background-size: 100% 3px, 3px 100%;
+}
+
+/* 硬核切角卡片 */
+.VPFeature {
+  border: 1px solid #333 !important;
+  border-left: 5px solid var(--vp-c-brand) !important;
+  background-color: #1a1a1a !important;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 95% 100%, 0 100%);
+}
